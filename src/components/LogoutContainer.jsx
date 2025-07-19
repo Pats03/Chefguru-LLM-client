@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FaUser, FaCaretDown } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
-import customFetch from '../../../utils/customFetch';
+import customFetch from '../utils/customFetch';
 
 const LogoutContainer = () => {
     const [showLogout, setShowLogout] = useState(false);
