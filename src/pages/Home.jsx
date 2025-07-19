@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Navbar, Sidebar, MainContent } from '../components';
-import customFetch from '../../../utils/customFetch';
+// ...existing code...
+import customFetch from '../utils/customFetch';
+// ...existing code...
 
 const Home = () => {
   const [sidebarOpen, setSidebarOpen] = useState(true);
