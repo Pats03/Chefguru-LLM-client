@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaSyncAlt, FaPepperHot } from 'react-icons/fa';
 import { FaLeftLong } from 'react-icons/fa6';
-import customFetch from '../../../utils/customFetch';
+import customFetch from '../utils/customFetch';
 import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 

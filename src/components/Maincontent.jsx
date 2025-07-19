@@ -3,7 +3,7 @@ import { IonCard, IonCardHeader, IonCardTitle } from '@ionic/react';
 import { FaInfoCircle, FaStar, FaSearch } from 'react-icons/fa';
 import temp from '../assets/temp.svg';
 import { Link } from 'react-router-dom';
-import customFetch from '../../../utils/customFetch';
+import customFetch from '../utils/customFetch';
 import { toast } from 'react-toastify';
 import Button from './Button';
 import image from '../assets/cgnlg.png';
