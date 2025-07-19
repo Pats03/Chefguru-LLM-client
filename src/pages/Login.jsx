@@ -181,28 +181,29 @@ const Login = () => {
     const email = event.target.email.value;
     const password = event.target.password.value;
 
-    try {
-      const response = await fetch('/api/v1/auth/login', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ email, password }),
-      });
+    // try {
+    //   const response = await fetch('/api/v1/auth/login', {
+    //     method: 'POST',
+    //     headers: {
+    //       'Content-Type': 'application/json',
+    //     },
+    //     body: JSON.stringify({ email, password }),
+    //   });
 
-      const data = await response.json();
+    //   const data = await response.json();
 
-      console.log('Login successful:', data);
-      if (data.message === 'Invalid credentials') {
-        toast.error(data.message);
-        navigate('/login');
-      } else {
-        toast.success(data.message);
-        navigate('/home');
-      }
-    } catch (error) {
-      console.error('Error:', error);
-    }
+    //   console.log('Login successful:', data);
+    //   if (data.message === 'Invalid credentials') {
+    //     toast.error(data.message);
+    //     navigate('/login');
+    //   } else {
+    //     toast.success(data.message);
+    //     navigate('/home');
+    //   }
+    // } catch (error) {
+    //   console.error('Error:', error);
+    // }
+    navigate('/home');
   };
 
   const handleSignUp = async (event) => {

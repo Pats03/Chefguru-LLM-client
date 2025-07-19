@@ -200,27 +200,28 @@ const Login = () => {
     const password = event.target.password.value;
     const password1 = event.target.password1.value;
 
-    try {
-      const response = await fetch('/api/v1/auth/register', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ name, email, password, password1 }),
-      });
+    // try {
+    //   const response = await fetch('/api/v1/auth/register', {
+    //     method: 'POST',
+    //     headers: {
+    //       'Content-Type': 'application/json',
+    //     },
+    //     body: JSON.stringify({ name, email, password, password1 }),
+    //   });
 
-      const data = await response.json();
-      if (response.ok) {
-        toast.success("Registered Successfully");
-        toast.success("Please login to continue");
-        navigate('/login');
-        console.log('Registration successful:', data);
-      } else {
-        console.error('Registration failed:', data);
-      }
-    } catch (error) {
-      console.error('Error:', error);
-    }
+    //   const data = await response.json();
+    //   if (response.ok) {
+    //     toast.success("Registered Successfully");
+    //     toast.success("Please login to continue");
+    //     navigate('/login');
+    //     console.log('Registration successful:', data);
+    //   } else {
+    //     console.error('Registration failed:', data);
+    //   }
+    // } catch (error) {
+    //   console.error('Error:', error);
+    // }
+     navigate('/login');
   };
 
   return (
